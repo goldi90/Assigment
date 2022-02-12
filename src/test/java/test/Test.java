@@ -27,9 +27,14 @@ Login.ClickLogin();
  
 home.GOTOMyProfile();
 Reg.clickRegister();
-
-
-
+Reg.Rname("KAushik");
+Reg.RLname("Dwivedi");
+Reg.Remail("kaushikdwivedi22@gmail.com");
+Reg.RTele("9082800180");
+Reg.RPwd("Abhi@9702");
+Reg.rCpwd("Abhi@9702");
+Reg.Agreement();
+Reg.RegisterButton(); 
 
 //Registration RegrtationButtionClick =new  Registration(driver);
 //RegrtationButtionClick.GoToRegistrationPage();
