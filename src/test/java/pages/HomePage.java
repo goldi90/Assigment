@@ -12,11 +12,21 @@ public HomePage(WebDriver driver) {
 	this.driver = driver;
 }
 
-By LoginBtn =By.xpath("/html/body/header/nav/div/div[2]/div/a[1]");
-public void GOTOLogin() {
+By MyProfile =By.xpath("/html/body/nav/div/div[2]/ul/li[2]/a/span[1]");
+
+By signIn =By.xpath("/html/body/nav/div/div[2]/ul/li[2]/ul/li[2]/a");
+
+public void GOTOMyProfile() {
 	// TODO Auto-generated constructor stub
-	driver.findElement(LoginBtn).click();
+	driver.findElement(MyProfile).click();
 	
+}
+public void SignInButton() {
+	driver.findElement(signIn).click();
+}
+public void MaxmizeWindows() throws InterruptedException {
+	driver.manage().window().maximize();
+	Thread.sleep(3000);
 }
 
 
