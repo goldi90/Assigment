@@ -11,12 +11,13 @@ public class Registration {
 		this.driver = driver;
 	}
 	
-	By RegButtion= By.xpath("/html/body/header/nav/div/div[2]/div/a[2]");
+	By RegButtion= By.xpath("/html/body/nav/div/div[2]/ul/li[2]/ul/li[1]/a");
 	
-	public void GoToRegistrationPage() {
+	public void clickRegister() {
 		driver.findElement(RegButtion).click();
 		
 	}
+
 	
 	
 	

@@ -15,26 +15,29 @@ public static void main(String[] args) throws InterruptedException {
 
 	
 HomePage home= new HomePage(driver);
+LoginPRocess Login =new LoginPRocess(driver);
+Registration Reg =new Registration(driver);
+
 home.MaxmizeWindows();
 home.GOTOMyProfile();
 home.SignInButton();
-
+Login.EnterEmail("Kaushik");
+Login.EnterPassword("Abhi@9702");
+Login.ClickLogin();
  
-LoginPRocess Login =new LoginPRocess(driver);
 home.GOTOMyProfile();
-Login.clickRegister();
+Reg.clickRegister();
 
-//Login.EnterEmail("Kaushikdwivedi22@gmail.com");
-//Login.EnterPassword("Abhi@9702");
-//Login.ClickLogin(); 
-//driver.quit();
 
-Registration RegrtationButtionClick =new  Registration(driver);
-RegrtationButtionClick.GoToRegistrationPage();
+
+
+//Registration RegrtationButtionClick =new  Registration(driver);
+//RegrtationButtionClick.GoToRegistrationPage();
 
  
 
-
+Thread.sleep(5000);
+driver.quit();
 
 
 
